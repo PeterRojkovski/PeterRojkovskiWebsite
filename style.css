@@ -1,0 +1,157 @@
+/*Sets the background of the html body to a local image file*/
+body{
+  background-image: url("Background.jpg")
+}
+
+/*Changes the font of all h1 headings (setting backup fonts as well), resizes font and adds padding*/
+h1{
+  font-family: Copperplate, 'Times New Roman', Times, serif !important;
+  font-size: 60px;
+  padding: 30px;
+}
+
+/*Makes h3 headings more bold and sets font size to 20px*/
+h3{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/*sets all h4 headings to a block display, changes font size, sets the background-color to white, sets a specific element width and rounds the coloured borders*/
+h4{
+  display: block;
+  font-size: 30px;
+  background-color: white;
+  width: 500px;
+  border-radius: 50px;
+  border: 1px solid dodgerblue;
+}
+
+/*Sets the default font for the whole page to optima, sets default text alignment to center and sets the default margins of the page to 20 vertically and automatically centered horizontally. NOTE: more specific selectors easily override this*/
+*{
+  font-family: Optima;
+  text-align: center;  
+  margin: 20px auto;
+}
+
+/*Creates the navigation tab under the h1 heading as a block with maximum and minimum widths and heights (for easier display on different screens) and sets padding, background color and a rounded border.*/
+.navigation{
+  display: block;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 88px;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*Changes the font size and boldness of the h3 heading in the navigation tab (the word "navigation") and sets the margin to auto so that the navigation bar is slightly more compact*/
+.navigation h3{
+  font-size: 30px;
+  font-weight: 900;
+  margin: auto;
+}
+
+/*This sets the list items in the navigation tab to manipulatable blocks with a margin for better organization */
+.navigation li {
+  display: inline-block;
+  margin: 8px;
+}
+
+/*This targets the links in the list items of the navigation tab and sets their color, background color, makes them bold, gives them a rounded black border with padding and takes away the link underline (removes text decoration)*/
+.navigationlinks li a {
+  color:black;
+  background-color: DodgerBlue;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/*This targets the links in the list items of the navigation tab when they are clicked, and changes the color of the text and the background, leaving everything else the same*/
+.navigation li a:hover{
+  color:dodgerblue;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*Targets the div where the projects list is displayed, making sure that the max and minimum width is set so that the blocks do not turn into strips touching both left and right edges of the screen*/
+#projects{
+  max-width: 700px;
+  min-width: 400px;
+}
+
+/*targets the numbered list containing the block elements for the coding projects, sets the margins and the padding to 0 so that the numbers are visible*/
+#projects ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Targets the individual list items in the project list, creating a rounded black border, black bold text, background blue color and padding and margins for organization*/
+#projects li{
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+/*Targets the links in the list items of the projects list, getting rid of the default underline (removing text decoration) setting background and text color, resizing font and setting a rounded border with nice padding*/
+#projects li a{
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/*Sets the values that change when the mouse hovers over the links, changing the text and background colors*/
+#projects li a:hover{
+  color: white;
+  background-color: gray;
+}
+
+/*Targets the two main large paragraphs in the website (description on portfolio page and about me) and sets width parameters to achieve a better looking blocked paragraph look, adds a colored border, paddind, colors background and bolds the text.*/
+.description{
+  max-width: 700px;
+  min-width: 400px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid dodgerblue;
+}
+
+/*Targets the combination of the subtitle and the picture of my dog, sets the group to a block display with a relative position, margins and text-align is set*/
+#imagesubtitle{
+  display: block;
+  position: relative;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+/*The image of my dog gets a fancy outline because I put a thick coloured border and coloured background (achieved with padding) */
+#img{
+  border: 10px solid dodgerblue;
+  background-color: gray;
+  padding: 10px;
+}
+
+/*This targets the subtitle that can be seen on top of the picture of my dog, centering the text, marking the position as absolute, setting the background colour to gray (but also translucent), resizes text, adds padding, and re-positions it so that it is perfectly centered and close to the bottom of the picture*/
+#subtitle{
+  text-align: center;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.5);
+  text-size: 20px;
+  padding: 5px;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

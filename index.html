@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+<!-- Here I add the title to the website that shows in the tab of the window -->
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<!-- Here I add the title to the page and gave it a background colour of DodgerBlue -->
+    <h1 style="background-color:DodgerBlue;">Peter's Portfolio</h1>
+<!-- Here I add the heading for the navigation list -->
+    <div class="navigation">
+      <h3>Navigation</h3>
+<!-- Here I add the list for the navigation -->
+
+<!-- I added a link to each page of the website in the list, making sure that I added ./ so that the program knows to look inside of the folder. -->
+      <div id="i">
+        <ul class="navigationlinks">      
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="aboutme.html">About Me</a></li>   
+          <li><a href="contact.html">Contact Information</a></li> 
+        </ul>
+      </div>
+    </div>
+<!-- Here I add another header and paragraph describing the order of the projects in the project list. I added breaks so that the paragraph is more of a block and less of a long line -->
+    <h3>Description</h3>
+    <p class="description">On this page, you get to check out all of the html and JavaScript based projects that I have created in Computer Science! These projects are listed in the order that I created them in, with number 1 being the first project that I ever created with Javascript!</p>
+<!-- Here I add a third header called project list, and a numbered list of projects -->
+    <div id="projects">
+      <h3 id="projecttitle">Project list</h3>
+      <ol id="projectsList">
+<!-- In each point I add a link to the html files of one of the project folders in the Projects folder, making sure that I write the correct directory (Projects/whatever project/index.html). I also added a blank target attribute so that the file opens in another window. After each line I added text stating the main lessons and ideas of each project. -->
+        <li><a href="Projects/Project 1/index.html" target="_blank">Introductory Project</a><p>This project was an introduction to javascript, without user interaction.</p></li>
+        <li><a href="Projects/NumberGuesser/index.html" target="_blank">Number Guesser</a><p>This project developed an understanding of math methods and user inputs.</p></li>
+        <li><a href="Projects/Heads Or Tails/index.html" target="_blank">Heads or Tails</a><p>In this project the focus was on comparing values of variables.</p></li>
+        <li><a href="Projects/Dragon Game/index.html" target="_blank">Dragon Game</a><p>This project was a deeper dive into random outcomes and blocks of code that would change based on the user input, as well as a way for the player to play endlessly.</p></li>
+        <li><a href="Projects/Pirate Speak/index.html" target="_blank">Pirate Speak</a><p>This project included extensive research of methods for the Date object, one of the many objects that Javascript contains.</p></li>
+        <li><a href="Projects/Phone Number/index.html" target="_blank">Phone Number</a><p>This project focused on the string splicing method.</p></li>
+        <li><a href="Projects/Pokemon Battle/index.html" target="_blank">Pokemon Battle</a><p>This project was the final exclusive Javascript project, and used all of the skills that were taught up to that point, including the skills displayed in previous projects.</p></li>
+        <li><a href="Projects/Talk Like A Pirate/index.html" target="_blank">Talk Like a Pirate</a><p>This was the first HTML project, and focused on formatting, tables, images, and a general intro to HTML.</p></li>
+        <li><a href="https://htmlpokemon-battle-part-2-peterrojkovski.blenkhornecs10.repl.co/" target="_blank">Pokemon Battle Part 2</a><p>An update to the first pokemon game, with pokemon coming to life with html!</p></li>
+        <li><a href="https://final-projectfinal-project-sblenkhorne-peterrojkovski.blenkhornecs10.repl.co/" target="_blank">PACMAN!</a><p>Created a PacMan game with javascript, html, and css!</p></li>
+      </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
