@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Pirate Translator </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div style="text-align:center">
+    <h3>Land Lubber's Pirate Translator</h3>
+    <p>Simply click on the buttons to translate<br />
+    words and/or phrases from English to pirate talk.
+    <hr />
+    <form name="PirateForm">
+    <!-- Add all your code below this line -->
+<!-- Added a break for visual effect -->
+    <br>
+<!-- Added two images of pirates for visual effect, one pirate on the left side of the screen and one on the right -->
+    <img src="https://static.vecteezy.com/system/resources/previews/001/202/679/original/pirate-png.png" alt="cartoon pirate with bandana" align="left" width="30%" ">
+    <img src="https://static.vecteezy.com/system/resources/previews/001/202/692/non_2x/pirate-png.png" alt="cartoon pirate with captain hat" align="right" width="27.5%" ">
+<!-- Here I set a table and center it. -->
+    <table align="center" width="40%">  
+<!-- In the table I have the first column as a table header, meaning it is bolded -->
+<!-- I have all of the buttons and sections in one table so that the labels are aligned. I made a row for each section and put all of the buttons in the section into one cell. -->
+      <tr> 
+        <th>Greetings</th>
+        <td align="left">
+          <input type="button" value="pardon me" onClick="document.PirateForm.Output.value += 'avast ';">
+          <input type="button" value="excuse me" onClick="document.PirateForm.Output.value += 'arrr ';">
+          <input type="button" value="hello" onClick="document.PirateForm.Output.value += 'ahoy ';">
+        </td>  
+      </tr>
+      <tr>
+        <th>People</th>
+        <td align="left">
+          <input type="button" value="sir" onClick="document.PirateForm.Output.value += 'matey ';">
+          <input type="button" value="madam" onClick="document.PirateForm.Output.value += 'proud beauty ';">
+          <input type="button" value="officer" onClick="document.PirateForm.Output.value += 'foul blaggart ';">
+          <input type="button" value="boy" onClick="document.PirateForm.Output.value += 'lad ';">
+          <input type="button" value="girl" onClick="document.PirateForm.Output.value += 'lass ';">     
+          <input type="button" value="you" onClick="document.PirateForm.Output.value += 'ye ';">     
+          <input type="button" value="stranger" onClick="document.PirateForm.Output.value += 'scurvy dog ';">
+        <td align="left">
+      </tr>
+      <tr>
+        <th>Questions</th>
+        <td align="left">
+          <input type="button" value="where is" onClick="document.PirateForm.Output.value += 'whar be ';">
+          <input type="button" value="can you help me find" onClick="document.PirateForm.Output.value += 'know ye ';">
+          <input type="button" value="is that" onClick="document.PirateForm.Output.value += 'be that ';">
+<!-- In certain translations I use the formula for an apostrophe in html (&#39;) for better pirate effect. To be able to use this properly I had to reformat the quotation marks so that the single quotation marks do not interfere with the added apostrophe. -->
+          <input type="button" value="what" onClick='document.PirateForm.Output.value += "wha&#39; ";'>
+        </td>
+      </tr>
+      <tr>
+        <th>Articles</th>
+        <td align="left"><input type="button" value="the" onClick='document.PirateForm.Output.value += "th&#39; ";'>
+        <input type="button" value="my" onClick="document.PirateForm.Output.value += 'me ';">
+        <input type="button" value="your" onClick="document.PirateForm.Output.value += 'yer ';">
+        <input type="button" value="their" onClick="document.PirateForm.Output.value += 'thar ';"></td>
+      </tr>
+      <tr>
+        <th>Places</th>
+        <td align="left"><input type="button" value="restroom" onClick="document.PirateForm.Output.value += 'head ';">
+        <input type="button" value="restaurant" onClick="document.PirateForm.Output.value += 'galley ';">
+        <input type="button" value="hotel" onClick="document.PirateForm.Output.value += 'fleabag inn ';">
+        <input type="button" value="sea bottom" onClick='document.PirateForm.Output.value += "Davy Jones&#39; locker ";'>
+        <input type="button" value="boat" onClick='document.PirateForm.Output.value += "galleon ";'></td>
+      </tr>
+      <tr>
+        <th>Conjunctions</th>
+        <td align="left"><input type="button" value="for" onClick='document.PirateForm.Output.value += "fer ";'>
+        <input type="button" value="and" onClick='document.PirateForm.Output.value += "&#39;n ";'>
+        <input type="button" value="of" onClick='document.PirateForm.Output.value += "o&#39; ";'>
+        <input type="button" value="is" onClick='document.PirateForm.Output.value += "be ";'></td>
+      </tr>
+      <tr>
+        <th>Adjectives</th>
+        <td align="left"><input type="button" value="old" onClick='document.PirateForm.Output.value += "ole ";'>
+        <input type="button" value="horrible" onClick='document.PirateForm.Output.value += "ghastly ";'>
+        <input type="button" value="amazing" onClick='document.PirateForm.Output.value += "amazin&#39; ";'>
+        <input type="button" value="ugly" onClick='document.PirateForm.Output.value += "foul smellin&#39; ";'></td>
+      </tr>
+      <tr>
+        <th>Objects</th>
+        <td align="left"><input type="button" value="sword" onClick='document.PirateForm.Output.value += "cutlass ";'>
+        <input type="button" value="flag" onClick='document.PirateForm.Output.value += "Jolly Roger ";'>
+        <input type="button" value="alcohol" onClick='document.PirateForm.Output.value += "rum ";'>
+        <input type="button" value="treasure" onClick='document.PirateForm.Output.value += "loot ";'>
+        <input type="button" value="gun" onClick='document.PirateForm.Output.value += "blunderbuss ";'></td>
+      </tr>
+    </table>
+    <br><br>
+<!-- To end the translator, I added a button that turns the value of the output box to blank, therefore deleting all previous text. -->
+    <input type="button" value="DELETE ALL" onClick='document.PirateForm.Output.value = "";'>
+    <!-- Stop editing here. DO NOT change anything below this line -->
+    <br><br>
+    <textarea name="Output" rows=10 cols=40></textarea>
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
