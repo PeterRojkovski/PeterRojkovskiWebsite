@@ -1,3 +1,4 @@
+
 /*Sets the background of the html body to a local image file*/
 body{
   background-image: url("Background.jpg")
@@ -83,6 +84,7 @@ h4{
 #projects{
   max-width: 700px;
   min-width: 400px;
+  clear: left;
 }
 
 /*targets the numbered list containing the block elements for the coding projects, sets the margins and the padding to 0 so that the numbers are visible*/
@@ -100,6 +102,9 @@ h4{
   border-radius: 10px;
   font-weight: bold;
   border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center left;
 }
 
 /*Targets the links in the list items of the projects list, getting rid of the default underline (removing text decoration) setting background and text color, resizing font and setting a rounded border with nice padding*/
@@ -149,9 +154,121 @@ h4{
   text-align: center;
   position: absolute;
   background-color: rgba(128, 128, 128, 0.5);
-  text-size: 20px;
+  font-size: 20px;
   padding: 5px;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#funstuff{
+  max-width: 600px;
+  min-width: 300px;
+}
+
+#Checklist{
+  height: 30vh;
+  width: 200px;
+  overflow: auto;
+  background-color: white;
+  border: 2px solid dodgerblue;
+  float: left;
+}
+
+#Random{
+  height: 30vh;
+  width: 200px;
+  background-color: white;
+  border: 2px solid dodgerblue;
+  float: right;
+}
+
+#Checklist h3{
+  position: sticky;
+  top:0;
+  background-color: dodgerblue;
+  z-index: 5;
+  margin:0;
+}
+
+#Random h3{
+  position: sticky;
+  top:0;
+  background-color: dodgerblue;
+  z-index: 5;
+  margin:0;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+}
+
+#Random button{
+  position:relative;
+  width: 100%;
+  height: 87%;
+  margin: 0;
+  left: 0%;
+  background-color:red;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#Random button:hover{
+  width: 100%;
+  height: 88%;
+  margin: 0;
+  background-image:url("EHxr.gif");
+  cursor: pointer;
+}
+
+.check img{
+  width: 1em;
+  position:relative;
+  left: 0.5em;
+  height: 1em;
+  padding:0;
+  margin:0;
+}
+
+#namebutton{
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: dodgerblue;
+  color: black;
+  font-weight: bold;
+  max-width: 100;
+  min-width: 300px;
+  height: 5vh;
+}
+
+#namebutton:hover{
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+  color: dodgerblue;
+}
+
+#username{
+  border-radius: 5px;
+  max-width: 100;
+  min-width: 300px;
+  height: 5vh;
+}
+
+#usernamelabel{
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+
+#savedname{
+  color: forestgreen;
+  background-color: goldenrod;
+  border-radius: 500px;
+  border: 5px solid green;
+  width: 300px;
+  height: 5vh;
+  font-size:x-large;
+  padding: 5px 0 20px 0;
+  vertical-align: text-top;
 }
